@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Default to dark mode for that "cool" tech vibe
 
   // Update HTML class when state changes
   useEffect(() => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-black transition-colors duration-300 overflow-x-hidden font-sans">
+    <div className="min-h-screen bg-gray-50 dark:bg-black transition-colors duration-300 overflow-x-hidden font-sans text-gray-900 dark:text-gray-100">
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       
       <main>
